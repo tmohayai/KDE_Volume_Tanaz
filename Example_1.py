@@ -5,7 +5,8 @@ from pylab import *
 Author: Tanaz A. Mohayai
 Copyright (C) 2016-present by Tanaz A. Mohayai, Illinois Institute of Technology. All rights reserved.
 
-This example demonstrates the use of the KDE_Volume_Tanaz module. The for009_dummy is a dummy input array and is used for illustrative purposes, only. 
+This example demonstrates the use of the KDE_Volume_Tanaz module. The for009_dummy is a dummy input array and is used for 
+illustrative purposes, only. 
 
 """
 
