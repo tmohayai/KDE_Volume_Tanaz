@@ -2,22 +2,26 @@
 Author: Tanaz A. Mohayai
 Copyright (C) 2016-present by Tanaz A. Mohayai. All rights reserved.
 
-This module uses the Kernel Density Estimation Technique from Python's Scipy module, "kde" [1], as defined in its default configuration and computes the density
-and volume associated with a distribution of muons, particles or data points in a 4-dimensional position-momentum phase space, for a user-defined contour. 
+This module uses the Kernel Density Estimation Technique from Python's Scipy module, "kde" [1], as defined in its default 
+configuration and computes the density and volume associated with a distribution of muons, particles or data points in a 
+4-dimensional position-momentum phase space, for a user-defined contour. 
 
-This script, along with others in this directory serve the Muon Ionization Cooling Experiment, MICE and are part of the author's PhD thesis work on MICE [2, 3]. 
-There is continous progress on the analysis and modules presented here and the author remains the sole contributor. However, suggestions for this work are 
-encouraged. This agreement may change without notice. 
+This script, along with others in this directory serve the Muon Ionization Cooling Experiment, MICE and are part of the 
+author's PhD thesis work on MICE [2, 3]. 
+There is continous progress on the analysis and modules presented here and the author remains the sole contributor. 
+However, suggestions for this work are encouraged. This agreement may change without notice. 
 
 The function parameters defined in this module along with their descriptions are as following: 
 
-data: input data array, with each row representing the particles, muons or data points and each column representing the coordinates, i.e. x, px, y, py.
+data: input data array, with each row representing the particles, muons or data points and each column representing the 
+coordinates, i.e. x, px, y, py.
 
 sample_size: size of the sample or number of muons - important for finding the user-defined contour. 
 
 percent: percentage of the particles that reside inside the user-defined contour. 
 
-i: the location/s along the MICE channel where the distrbutions are evaluated - this could be the virtual detector number in G4-beamline [4]. 
+i: the location/s along the MICE channel where the distrbutions are evaluated - this could be the virtual detector number 
+in G4-beamline [4]. 
 
 x_colm: column number in the data file corresponding to x position coordinates.
 
@@ -27,8 +31,8 @@ y_colm: column number in the data file corresponding to y position coordinates.
 
 py_colm: column number in the data file corresponding to py momentum coordinates.
 
-region_colm: column number in the data file corresponding to region number, representing the z positions or location/s of the particles or muons along the MICE 
-channel.
+region_colm: column number in the data file corresponding to region number, representing the z positions or location/s of 
+the particles or muons along the MICE channel.
 
 N_mc: number of monte carlo points with default being 1e6. 
 
@@ -36,8 +40,8 @@ Note: the default values are relevant when an ICOOL's "for009.dat" [5] data arra
 
 Note: parameter "percent" has to be in form of a quotient (0.09 for 9% of the sample size). 
 
-Please note that this module, along with others which are currently in author's posession are planned to be merged into the official MICE Analysis User Software, 
-MAUS package [6].
+Please note that this module, along with others which are currently in author's posession are planned to be merged into 
+the official MICE Analysis User Software, MAUS package [6].
 
 [1] Scipy's "gaussian_kde()" module by R. Kern, http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html.
 [2] T. A. Mohayai, et. al., "Simulated Measurements of Cooling in Muon Ionization Cooling Experiment", IPAC'15 Proceedings.
@@ -112,8 +116,8 @@ if __name__=="__main__":
 	Author: Tanaz A. Mohayai
 	Copyright (C) 2016-present by Tanaz A. Mohayai, Illinois Institute of Technology. All rights reserved.
 	
-	This example demonstrates the use of the KDE_Volume_Tanaz module. The for009_dummy is a dummy input array and is used for illustrative purposes, only.
-	Please note that this example is also separately created in this directory.
+	This example demonstrates the use of the KDE_Volume_Tanaz module. The for009_dummy is a dummy input array 
+	and is used for illustrative purposes, only. Please note that this example is also separately created in this directory.
 	
 	"""
 
