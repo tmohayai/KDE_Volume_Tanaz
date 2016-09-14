@@ -55,7 +55,7 @@ from pylab import *
 import numpy as np
 from math import *
 import scipy.stats as st
-from pylab import *
+
 
 def kde_volume_Tanaz(data, sample_size, i, percent=0.1, x_colm=6, px_colm=9, y_colm=7, py_colm=10, region_colm=4, N_mc=1e6):
 
