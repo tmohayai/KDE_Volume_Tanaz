@@ -1,4 +1,4 @@
-import KDE_Volume_Tanaz
+import VolKDE
 from pylab import * 
 
 """
@@ -23,6 +23,6 @@ for i in range(1, 4):
 	
 	sample_size, columns= data[data[:,region_colm]==i,:].shape
 	
-	KDE_Volume_Tanaz.kde_volume_Tanaz(data, sample_size, i, percent, x_colm, px_colm, y_colm, py_colm, region_colm, N_mc)
+	VolKDE.volkde(data, sample_size, i, percent, x_colm, px_colm, y_colm, py_colm, region_colm, N_mc)
 
 		
