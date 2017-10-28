@@ -57,7 +57,7 @@ from math import *
 import scipy.stats as st
 
 
-def kde_volume_Tanaz(data, sample_size, i, percent=0.1, x_colm=6, px_colm=9, y_colm=7, py_colm=10, region_colm=4, N_mc=1e6):
+def volkde(data, sample_size, i, percent=0.1, x_colm=6, px_colm=9, y_colm=7, py_colm=10, region_colm=4, N_mc=1e6):
 
 	
 		x = data[data[:,region_colm]==i, x_colm] 
@@ -116,7 +116,7 @@ if __name__=="__main__":
 	Author: Tanaz A. Mohayai
 	Copyright (C) 2016-present by Tanaz A. Mohayai, Illinois Institute of Technology. All rights reserved.
 	
-	This example demonstrates the use of the KDE_Volume_Tanaz module. The for009_dummy is a dummy input array 
+	This example demonstrates the use of the VolKDE module. The for009_dummy is a dummy input array 
 	and is used for illustrative purposes, only. Please note that this example is also separately created in this directory.
 	
 	"""
