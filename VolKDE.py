@@ -57,7 +57,7 @@ from math import *
 import scipy.stats as st
 
 
-def volkde(data, sample_size, i, percent=0.1, x_colm=6, px_colm=9, y_colm=7, py_colm=10, region_colm=4, N_mc=1e6):
+def volkde(data, sample_size, i, percent=0.1, x_colm=6, px_colm=9, y_colm=7, py_colm=10, region_colm=4, N_mc=1000000):
 
 	
 		x = data[data[:,region_colm]==i, x_colm] 
@@ -99,11 +99,10 @@ def volkde(data, sample_size, i, percent=0.1, x_colm=6, px_colm=9, y_colm=7, py_
 		
 		hyper_cube = (xmax-xmin)*(ymax-ymin)*(pxmax-pxmin)*(pymax-pymin)
 		
-		N=N_mc
-		mcx = random(N)*(xmax-xmin)+xmin
-		mcy = random(N)*(ymax-ymin)+ymin
-		mcpx = random(N)*(pxmax-pxmin)+pxmin
-		mcpy = random(N)*(pymax-pymin)+pymin
+		mcx = random(N_mc)*(xmax-xmin)+xmin
+		mcy = random(N_mc)*(ymax-ymin)+ymin
+		mcpx = random(N_mc)*(pxmax-pxmin)+pxmin
+		mcpy = random(N_mc)*(pymax-pymin)+pymin
 		mc_kde = data_kde_object.evaluate(np.vstack([mcx,mcpx,mcy,mcpy]))
 		volume = (mc_kde>=dens).sum()*(hyper_cube/N)
 
