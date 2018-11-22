@@ -112,7 +112,7 @@ def volkde(data, sample_size, i, percent, x_colm, px_colm, y_colm, py_colm, regi
 		volume = (mc_kde>=dens).sum()*(hyper_cube/N_mc)
 
 		output = np.column_stack((volume, dens, i))
-		return np.savetxt('volume_density_region'+str(i)+'.dat', output)
+		return np.savetxt('volume_density_region.dat', output)
 		
 if __name__=="__main__":
 	"""
