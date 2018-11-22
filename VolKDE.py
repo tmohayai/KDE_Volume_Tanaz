@@ -125,7 +125,7 @@ if __name__=="__main__":
 	"""
 
 	
-	for i in range(1, 4):
+	for i in range(1, 2):
 		data = loadtxt('for009_dummy.dat', skiprows=2)
 		
 		x_colm, px_colm, y_colm, py_colm = 6, 9, 7, 10 
