@@ -23,7 +23,9 @@ for i in range(1, 2):
 	
 	sample_size = data[data[:,region_colm]==i,:].shape[0]
 	
-	VolKDE.volkde(data, sample_size, i, percent, x_colm, px_colm, y_colm, py_colm, region_colm, N_mc)
+	output = VolKDE.volkde(data, sample_size, i, percent, x_colm, px_colm, y_colm, py_colm, region_colm, N_mc)
+	
+	
 
 
 		
