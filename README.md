@@ -4,8 +4,7 @@ Welcome to "VolKDE" module.
 Author: Tanaz A. Mohayai
 
 This module is part of a series of modules owned by the author for measurements of density and volume as alternative figure of merit 
-for beam cooling in Muon Ionization Cooling Experiment, MICE and has an "in-progress" nature due to it being part of the PhD thesis 
-project of the author. Please see the descriptions in VolKDE.py for more details.
+for beam cooling in Muon Ionization Cooling Experiment, MICE. Please see the descriptions in VolKDE.py for more details.
 
 To make this module work, 
 
