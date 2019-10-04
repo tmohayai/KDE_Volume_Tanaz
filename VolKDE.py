@@ -7,7 +7,7 @@ configuration and computes the density and volume associated with a distribution
 4-dimensional position-momentum phase space, for a user-defined contour. 
 
 This script, along with others in this directory serve the Muon Ionization Cooling Experiment, MICE and are part of the 
-author's PhD thesis work on MICE [2, 3, 4, 5, 6]. 
+following papers [2, 3, 4, 5, 6]. 
 There is continous progress on the analysis and modules presented here and the author remains the sole contributor. 
 However, suggestions for this work are encouraged. This agreement may change without notice. 
 
